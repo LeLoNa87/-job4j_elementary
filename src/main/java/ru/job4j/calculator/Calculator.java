@@ -7,11 +7,16 @@ public class Calculator {
         System.out.println(result);
     }
 
+    public static void minus(int first, int second) {
+        int result = first - second;
+        System.out.println(result);
+
+    }
+
     public static void main(String[] args) {
-        Calculator.plus(1, 2);
-        Calculator.plus(10, 11);
-        Calculator.plus(100, 500);
-        Calculator.plus(4, 2);
-        Calculator.plus(3, 5);
+        plus(1, 2);
+        plus(10, 11);
+        plus(7, 3);
+        plus(2, 6);
     }
 }
