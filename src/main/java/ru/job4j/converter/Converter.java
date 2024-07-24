@@ -7,8 +7,9 @@ public class Converter {
     }
 
     public static float rubleToDollar(float value) {
-        float result = value / 60;
+      float result = value / 60;
         return result;
+
     }
 
     public static void main(String[] args) {
