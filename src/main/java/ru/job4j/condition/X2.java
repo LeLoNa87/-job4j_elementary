@@ -14,32 +14,4 @@ public class X2 {
         int result = X2.calc(a, b, c, x);
         System.out.println(result);
     }
-
-    public static void main1(String[] args) {
-        int a = 1;
-        int b = 1;
-        int c = 1;
-        int x = 1;
-        int result = X2.calc(a, b, c, x);
-        System.out.println(result);
-    }
-
-    public static void main2(String[] args) {
-        int a = 1;
-        int b = 1;
-        int c = 0;
-        int x = 1;
-        int result = X2.calc(a, b, c, x);
-        System.out.println(result);
-    }
-
-    public static void main3(String[] args) {
-        int a = 1;
-        int b = 1;
-        int c = 1;
-        int x = 0;
-        int result = X2.calc(a, b, c, x);
-        System.out.println(result);
-    }
 }
-
