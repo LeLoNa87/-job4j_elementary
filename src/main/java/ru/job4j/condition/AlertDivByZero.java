@@ -10,7 +10,7 @@ public class AlertDivByZero {
             }
         }
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         AlertDivByZero.chekNumber(4);
         AlertDivByZero.chekNumber(0);
         AlertDivByZero.chekNumber(-1);
