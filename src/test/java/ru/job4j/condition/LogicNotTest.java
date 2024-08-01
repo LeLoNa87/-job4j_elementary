@@ -58,14 +58,14 @@ class LogicNotTest {
     void whenNotPositiveTrue() {
         int num = -2;
         boolean result = LogicNot.notPositive(num);
-        assertThat(result).isFalse();
+        assertThat(result).isTrue();
     }
 
     @Test
     void whenNotPositiveFalse() {
         int num = 2;
         boolean result = LogicNot.notPositive(num);
-        assertThat(result).isTrue();
+        assertThat(result).isFalse();
     }
 
     @Test

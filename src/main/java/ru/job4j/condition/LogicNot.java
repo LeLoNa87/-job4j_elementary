@@ -3,26 +3,26 @@ package ru.job4j.condition;
 public class LogicNot {
 
     public static boolean isEven(int num) {
-        return !notPositive(num);
+        return num % 2 == 0;
     }
 
     public static boolean isPositive(int num) {
-        return !isPositive(num);
+        return num > 0;
     }
 
     public static boolean notEven(int num) {
-        return !isEven(num);
+        return !(num % 2 == 0);
     }
 
     public static boolean notPositive(int num) {
-        return !notPositive(num);
+        return !(num > 0);
     }
 
     public static boolean notEvenAndPositive(int num) {
-        return !notEvenAndPositive(num);
+        return !(num % 2 == 0) && num > 0;
     }
 
     public static boolean evenOrNotPositive(int num) {
-        return !evenOrNotPositive(num);
+        return num % 2 == 0 && !(num > 0);
     }
 }
