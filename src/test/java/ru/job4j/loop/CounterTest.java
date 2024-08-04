@@ -14,16 +14,16 @@ class CounterTest {
     }
 
     @Test
-    void whenSumEvenNumbersFromTwoToTwelveThenFourteen() {
+    void whenSumEvenNumbersFromTwoToTwelveThenFourteenTwo() {
         int start = 2;
         int finish = 12;
         int result = Counter.sumByEven(start, finish);
-        int expected = 14;
+        int expected = 42;
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
     void whenSumByEvenFromNegativeToPositiveNumbers() {
-        assertThat(Counter.sumByEven(-3, 7)).isEqualTo(3);
+        assertThat(Counter.sumByEven(-4, 8)).isEqualTo(14);
     }
 }
