@@ -1,33 +1,29 @@
 package ru.job4j.loop;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class CounterTest {
-
     @Test
-    public void whenSumFrom0To10Then55() {
-        assertEquals(55, Counter.sum(0, 10));
+    void whenSumEvenNumbersFromOneToTenThenThirty() {
+        int start = 1;
+        int finish = 10;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 30;
+        assertThat(result).isEqualTo(expected);
     }
 
     @Test
-    public void whenSumFrom3To8Then33() {
-        assertEquals(33, Counter.sum(3, 8));
+    void whenSumEvenNumbersFromTwoToTwelveThenFourteen() {
+        int start = 2;
+        int finish = 12;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 14;
+        assertThat(result).isEqualTo(expected);
     }
 
     @Test
-    public void whenSumFrom1To1Then1() {
-        assertEquals(1, Counter.sum(1, 1));
-    }
-
-    @Test
-    public void whenSumFromNegative5To5Then0() {
-        assertEquals(0, Counter.sum(-5, 5));
-    }
-
-    @Test
-    public void whenStartGreaterThanFinishThen0() {
-        assertEquals(0, Counter.sum(10, 0));
+    void whenSumByEvenFromNegativeToPositiveNumbers() {
+        assertThat(Counter.sumByEven(-3, 7)).isEqualTo(3);
     }
 }
