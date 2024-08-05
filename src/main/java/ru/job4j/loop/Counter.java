@@ -14,7 +14,6 @@ public static int sumByEven(int start, int finish) {
         for (int i = start; i <= finish; i++) {
             if (i % 2 == 0) {
                 sum = sum + i;
-
             }
         }
         return sum;
